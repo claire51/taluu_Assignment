@@ -23,18 +23,16 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
     private Session session;
 
 
-    public void setEm(EntityManager em)
-    {
+    public void setEm(EntityManager em) {
         this.em = em;
-        this.session = ((Session)this.em.getDelegate());
+        this.session = ((Session) this.em.getDelegate());
     }
 
     public EntityManager getEm() {
         return this.em;
     }
 
-    public Session getSession()
-    {
+    public Session getSession() {
         return this.session;
     }
 
@@ -88,8 +86,7 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
         }
     }
 
-        public List<T> findAll()
-    {
+    public List<T> findAll() {
         javax.persistence.criteria.CriteriaQuery cq = this.em.getCriteriaBuilder().createQuery();
         cq.select(cq.from(this.persistentClass));
         return em.createQuery(cq).getResultList();
@@ -100,7 +97,6 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
         T result = this.em.find(this.persistentClass, id);
         return result;
     }
-
 
 
     public List<T> findByNamedQuery(String name, Object... params) {
@@ -127,38 +123,31 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
     }
 
 
-    public int countAll()
-    {
+    public int countAll() {
         return countByCriteria(new Criterion[0]);
     }
 
 
-    public int countByExample(T exampleInstance)
-    {
-        Session session = (Session)this.em.getDelegate();
+    public int countByExample(T exampleInstance) {
+        Session session = (Session) this.em.getDelegate();
         Criteria crit = session.createCriteria(getEntityClass());
         crit.setProjection(Projections.rowCount());
         crit.add(Example.create(exampleInstance));
 
-        return ((Integer)crit.list().get(0)).intValue();
+        return ((Integer) crit.list().get(0)).intValue();
     }
 
 
-    public List<T> findByExample(T exampleInstance)
-    {
-        Session session = (Session)this.em.getDelegate();
+    public List<T> findByExample(T exampleInstance) {
+        Session session = (Session) this.em.getDelegate();
         Criteria crit = session.createCriteria(getEntityClass());
         List<T> result = crit.list();
         return result;
     }
 
 
-
-
-
-    public List<T> findByCriteria(int firstResult, int maxResults, ProjectionList projectionList, List<Criterion> criterion, List<String> orderBy)
-    {
-        Session session = (Session)this.em.getDelegate();
+    public List<T> findByCriteria(int firstResult, int maxResults, ProjectionList projectionList, List<Criterion> criterion, List<String> orderBy) {
+        Session session = (Session) this.em.getDelegate();
         Criteria crit = session.createCriteria(getEntityClass());
 
         if (projectionList != null) {
@@ -183,24 +172,17 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
 
         Object result = crit.list();
 
-        return (List<T>)result;
+        return (List<T>) result;
     }
 
 
-
-
-
-
-
-
-    public List<T> findByCriteria(int firstResult, int maxResults, ProjectionList projectionList, Map<String, String> aliases, List<Criterion> criterion, List<String> orderBy)
-    {
-        Session session = (Session)this.em.getDelegate();
+    public List<T> findByCriteria(int firstResult, int maxResults, ProjectionList projectionList, Map<String, String> aliases, List<Criterion> criterion, List<String> orderBy) {
+        Session session = (Session) this.em.getDelegate();
         Criteria crit = session.createCriteria(getEntityClass());
 
         if (aliases != null) {
             for (Map.Entry<String, String> alias : aliases.entrySet()) {
-                crit.createAlias((String)alias.getKey(), (String)alias.getValue());
+                crit.createAlias((String) alias.getKey(), (String) alias.getValue());
             }
         }
         if (projectionList != null) {
@@ -226,18 +208,12 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
 
         Object result = crit.list();
 
-        return (List<T>)result;
+        return (List<T>) result;
     }
 
 
-
-
-
-
-
-    public List<T> findByCriteria(int firstResult, int maxResults, ProjectionList projectionList, List<Criterion> criterion, Map<String, String> orderBy)
-    {
-        Session session = (Session)this.em.getDelegate();
+    public List<T> findByCriteria(int firstResult, int maxResults, ProjectionList projectionList, List<Criterion> criterion, Map<String, String> orderBy) {
+        Session session = (Session) this.em.getDelegate();
         Criteria crit = session.createCriteria(getEntityClass());
 
         if (projectionList != null) {
@@ -248,10 +224,10 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
         }
 
         for (Map.Entry<String, String> order : orderBy.entrySet()) {
-            if (((String)order.getValue()).equals("desc")) {
-                crit.addOrder(Order.desc((String)order.getKey()));
+            if (((String) order.getValue()).equals("desc")) {
+                crit.addOrder(Order.desc((String) order.getKey()));
             } else {
-                crit.addOrder(Order.asc((String)order.getKey()));
+                crit.addOrder(Order.asc((String) order.getKey()));
             }
         }
         if (firstResult > 0) {
@@ -265,19 +241,16 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
 
         Object result = crit.list();
 
-        return (List<T>)result;
+        return (List<T>) result;
     }
 
 
-
-
-    public List<T> findByCriteria(Criterion... criterion)
-    {
+    public List<T> findByCriteria(Criterion... criterion) {
         return findByCriteria(-1, -1, criterion);
     }
-    public List<T> findByCriteria(int firstResult, int maxResults, Criterion... criterion)
-    {
-        Session session = (Session)this.em.getDelegate();
+
+    public List<T> findByCriteria(int firstResult, int maxResults, Criterion... criterion) {
+        Session session = (Session) this.em.getDelegate();
         Criteria crit = session.createCriteria(getEntityClass());
 
         for (Criterion c : criterion) {
@@ -293,12 +266,8 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
         }
 
         Object result = crit.list();
-        return (List<T>)result;
+        return (List<T>) result;
     }
-
-
-
-
 
 
 //public List<T> findByCriteria(int firstResult, int maxResults, Map<String, String> aliases, Criterion... criterion)
@@ -330,11 +299,8 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
 //           }
 
 
-
-
-    public int countByCriteria(Criterion... criterion)
-    {
-        Session session = (Session)this.em.getDelegate();
+    public int countByCriteria(Criterion... criterion) {
+        Session session = (Session) this.em.getDelegate();
         Criteria crit = session.createCriteria(getEntityClass());
         crit.setProjection(Projections.rowCount());
 
@@ -342,32 +308,25 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
             crit.add(c);
         }
 
-        return ((Long)crit.list().get(0)).intValue();
+        return ((Long) crit.list().get(0)).intValue();
     }
 
 
-
-
-    public int countByCriteria(Map<String, String> aliases, List<Criterion> criterion)
-    {
-        Session session = (Session)this.em.getDelegate();
+    public int countByCriteria(Map<String, String> aliases, List<Criterion> criterion) {
+        Session session = (Session) this.em.getDelegate();
         Criteria crit = session.createCriteria(getEntityClass());
         crit.setProjection(Projections.rowCount());
 
         for (Map.Entry<String, String> alias : aliases.entrySet()) {
-            crit.createAlias((String)alias.getKey(), (String)alias.getValue());
+            crit.createAlias((String) alias.getKey(), (String) alias.getValue());
         }
 
         for (Criterion c : criterion) {
             crit.add(c);
         }
 
-        return ((Long)crit.list().get(0)).intValue();
+        return ((Long) crit.list().get(0)).intValue();
     }
-
-
-
-
 
 
 }
