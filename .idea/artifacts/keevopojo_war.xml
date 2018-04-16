@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="keevopojo:war">
+    <output-path>$PROJECT_DIR$/keevopojo/target</output-path>
+    <root id="archive" name="keevopojo-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="keevopojo:war exploded" />
+    </root>
+  </artifact>
+</component>

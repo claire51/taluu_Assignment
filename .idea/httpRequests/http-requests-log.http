@@ -1,0 +1,314 @@
+GET http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-16T120900.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-16T120306.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T112941.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T094448.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T111749.500.html
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T111637.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T111602.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T111400.500.html
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T111340.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T111109-1.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T111109.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T111045.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110912.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110911.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110909.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110713-8.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110713-7.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110713-6.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110713-5.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110713-4.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110713-3.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110713-2.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110713-1.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110713.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110712-4.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110712-3.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110712-2.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110712-1.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110712.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110422.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/person
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T110014.404.html
+
+###
+
+GET http://localhost:8080/keevopojo/api/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-15T105845.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/person
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/keevopojo/api/user/1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/keevopojo/api/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-08T041533.200.json
+
+###
+
+DELETE http://localhost:8080/keevopojo/api/user/1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/keevopojo/api/user/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-08T041449.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-08T041434.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-08T041329.404.html
+
+###
+
+GET http://localhost:8080/api/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-08T041250.404.html
+
+###
+
