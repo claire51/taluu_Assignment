@@ -1,7 +1,7 @@
 package com.mycompany.userProfile.dao.daoImpl;
 
 import com.mycompany.gennericdao.genericdaoImpl.GeericDaoImpl;
-import com.mycompany.model.Personel;
+import com.mycompany.model.coredb.Personel;
 import com.mycompany.userProfile.dao.UserprofileDao;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.mycompany.services.userProfile;
 
-import com.mycompany.model.Personel;
+import com.mycompany.model.coredb.Personel;
 import com.mycompany.userProfile.dao.UserprofileDao;
 import com.mycompany.utill.filter.JWTTokenNeeded;
 
@@ -12,7 +12,6 @@ import javax.persistence.PersistenceContext;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;

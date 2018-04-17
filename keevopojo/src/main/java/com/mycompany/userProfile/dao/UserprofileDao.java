@@ -1,7 +1,7 @@
 package com.mycompany.userProfile.dao;
 
 import com.mycompany.gennericdao.GenericDao;
-import com.mycompany.model.Personel;
+import com.mycompany.model.coredb.Personel;
 
 
 import javax.ejb.Local;

@@ -1,5 +1,7 @@
 package com.mycompany.model;
 
+import com.mycompany.model.coredb.Personel;
+
 import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;

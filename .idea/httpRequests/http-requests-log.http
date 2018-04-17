@@ -2,6 +2,182 @@ GET http://localhost:8080/keevopojo/api/profile
 Accept: */*
 Cache-Control: no-cache
 
+<> 2018-04-17T104910.200.json
+
+###
+
+POST http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /home/kevol/kevol
+--null--
+
+###
+
+POST http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /home/kevol/kevol
+--null--
+
+###
+
+POST http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /home/kevol/kevol
+--null--
+
+###
+
+POST http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /home/kevol/kevol
+--null--
+
+###
+
+POST http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /home/kevol/kevol
+--null--
+
+###
+
+POST http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /home/kevol/kevol
+--null--
+
+###
+
+POST http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /home/kevol/kevol
+--null--
+
+###
+
+POST http://localhost:8080/keevopojo/api/login
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /home/kevol/kevol
+--null--
+
+###
+
+POST http://localhost:8080/keevopojo/api/login?username=kevolmuish&password=bush
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/keevopojo/api/login?username=kevolmuish&password=bush
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-17T092440.200.json
+
+###
+
+POST http://localhost:8080/keevopojo/api/login?username=kevolmuish&password=bush
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/keevopojo/api/login?username=kevolmuish&password=bush
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/keevopojo/api/login?username=kevolmuish&password=bush
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/keevopojo/api/login?username=kevolmuish&password=bush
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/keevopojo/api/login/login?username=kevolmuish&password=bush
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/keevopojo/api/login?username=kevolmuish&password=bush
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-17T090557.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile/1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile/qury
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-17T120459.200.json
+
+###
+
+GET http://localhost:8080/keevopojo/api/profile
+Accept: */*
+Cache-Control: no-cache
+
 <> 2018-04-16T120900.200.json
 
 ###
@@ -235,80 +411,6 @@ Accept: */*
 Cache-Control: no-cache
 
 <> 2018-04-15T110422.200.json
-
-###
-
-GET http://localhost:8080/keevopojo/person
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-04-15T110014.404.html
-
-###
-
-GET http://localhost:8080/keevopojo/api/user
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-04-15T105845.200.json
-
-###
-
-GET http://localhost:8080/keevopojo/api/person
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-GET http://localhost:8080/keevopojo/api/user/1
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-GET http://localhost:8080/keevopojo/api/user
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-04-08T041533.200.json
-
-###
-
-DELETE http://localhost:8080/keevopojo/api/user/1
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-GET http://localhost:8080/keevopojo/api/user/1
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-04-08T041449.200.json
-
-###
-
-GET http://localhost:8080/keevopojo/api/user
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-04-08T041434.200.json
-
-###
-
-GET http://localhost:8080/keevopojo/api/user
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-04-08T041329.404.html
-
-###
-
-GET http://localhost:8080/api/user
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-04-08T041250.404.html
 
 ###
 

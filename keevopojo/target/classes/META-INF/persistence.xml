@@ -3,7 +3,7 @@
   <persistence-unit name="com.mycompany_keevopojo_war_1.0-SNAPSHOTPU" transaction-type="JTA">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <jta-data-source>java:/jboss/datasources/kevol</jta-data-source>
-    <class>com.mycompany.model.Personel</class>
+    <class>com.mycompany.model.coredb.Personel</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
