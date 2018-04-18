@@ -46,6 +46,7 @@ public class Authentication {
     private KeyGenerator keyGenerator;
     @PersistenceContext
     private EntityManager em;
+
     @PostConstruct
     private void init() {
         this.userprofileDao.setEm(this.em);
@@ -74,10 +75,10 @@ public class Authentication {
 
         try {
 
-            logger.info("#### login/password : " + login+ "/" + password);
+            logger.info("#### login/password : " + login + "/" + password);
 
             // Authenticate the user using the credentials provided
-            authenticate(login,password);
+            authenticate(login, password);
 
             // Issue a token for the user
             String token = issueToken(login);
@@ -94,14 +95,16 @@ public class Authentication {
 
         logger.log(Level.INFO, "By id ");
         String findAll = "Personel.findByPassword";
-        Object[] k =  new Object[] { login, password};
+        Object[] k = new Object[]{login, password};
 
         List<Personel> personelList = this.userprofileDao.findProfileByNamedQuery(findAll, k);
-        Personel personel;
-        personel= personelList.get(0);
-//        query.setParameter("password", PasswordUtils.digestPassword(password));
-        if (personel == null)
+        if (null != personelList && personelList.size() > 0) {
+            Personel personel = personelList.get(0);
+            if (personel == null)
+                throw new SecurityException("Invalid user/password");
+        } else {
             throw new SecurityException("Invalid user/password");
+        }
     }
 
     private String issueToken(String login) {
@@ -117,6 +120,7 @@ public class Authentication {
         return jwtToken;
 
     }
+
     @SuppressWarnings("Since15")
     private Date toDate(LocalDateTime localDateTime) {
         return Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());

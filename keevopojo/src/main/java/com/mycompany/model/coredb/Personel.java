@@ -19,19 +19,18 @@ import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- *
  * @author ADMIN
  */
 @Entity
 @Table(name = "personel")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Personel.findAll", query = "SELECT p FROM Personel p")
-    , @NamedQuery(name = "Personel.findByFirstname", query = "SELECT p FROM Personel p WHERE p.firstname = :firstname")
-    , @NamedQuery(name = "Personel.findByLastname", query = "SELECT p FROM Personel p WHERE p.lastname = :lastname")
-    , @NamedQuery(name = "Personel.findByAge", query = "SELECT p FROM Personel p WHERE p.age = :age")
- , @NamedQuery(name = "Personel.findByPassword", query = "SELECT p FROM Personel p WHERE p.firstname = :login AND p.lastname = :password")
-    , @NamedQuery(name = "Personel.findById", query = "SELECT p FROM Personel p WHERE p.id = :id")})
+        @NamedQuery(name = "Personel.findAll", query = "SELECT p FROM Personel p")
+        , @NamedQuery(name = "Personel.findByFirstname", query = "SELECT p FROM Personel p WHERE p.firstname = :firstname")
+        , @NamedQuery(name = "Personel.findByLastname", query = "SELECT p FROM Personel p WHERE p.lastname = :lastname")
+        , @NamedQuery(name = "Personel.findByAge", query = "SELECT p FROM Personel p WHERE p.age = :age")
+        , @NamedQuery(name = "Personel.findByPassword", query = "SELECT p FROM Personel p WHERE p.firstname = ? AND p.lastname =?")
+        , @NamedQuery(name = "Personel.findById", query = "SELECT p FROM Personel p WHERE p.id = :id")})
 public class Personel implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -112,5 +111,5 @@ public class Personel implements Serializable {
     public String toString() {
         return "com.mycompany.model.coredb.Personel[ id=" + id + " ]";
     }
-    
+
 }

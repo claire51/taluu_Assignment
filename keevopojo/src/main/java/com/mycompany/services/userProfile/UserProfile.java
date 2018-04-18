@@ -69,7 +69,7 @@ public class UserProfile {
 
 
     @GET
-    @Path("/qury")
+    @Path("/namedqry")
     @Consumes("application/json")
     @Produces(MediaType.APPLICATION_JSON)
     public Response loadByNamedQuery() throws Exception {
@@ -85,7 +85,6 @@ public class UserProfile {
         }
 
     }
-
 
 
 }

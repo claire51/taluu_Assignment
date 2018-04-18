@@ -101,11 +101,14 @@ public class GeericDaoImpl<T, ID extends Serializable> implements GenericDao<T, 
 
     public List<T> findByNamedQuery(String name, Object... params) {
         Query query = this.em.createNamedQuery(name);
-try {
-    for (int i = 0; i < params.length; i++) {
-        query.setParameter(i + 1, params[i]);
-    }
-}catch(Exception h){h.printStackTrace();}
+        try {
+            for (int i = 0; i < params.length; i++) {
+                query.setParameter(i + 1, params[i]);
+
+            }
+        } catch (Exception h) {
+            h.printStackTrace();
+        }
         List<T> result = query.getResultList();
         return result;
     }

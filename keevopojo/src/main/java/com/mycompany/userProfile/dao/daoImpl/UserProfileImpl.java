@@ -21,7 +21,7 @@ public class UserProfileImpl extends GeericDaoImpl<Personel, Integer> implements
 
     @Override
     public List<Personel> findProfileByNamedQuery(String paramString, Object... paramVarArgs) {
-        return findByNamedQuery(paramString ,paramVarArgs);
+        return findByNamedQuery(paramString, paramVarArgs);
     }
 }
 
