@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/keevopojo/keevopojo.iml" filepath="$PROJECT_DIR$/keevopojo/keevopojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nexx.iml" filepath="$PROJECT_DIR$/Nexx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appA/appA.iml" filepath="$PROJECT_DIR$/appA/appA.iml" />
+      <module fileurl="file://D:\Nexx\keevopojo\keevopojo.iml" filepath="D:\Nexx\keevopojo\keevopojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mavenproject2.iml" filepath="$PROJECT_DIR$/mavenproject2.iml" />
     </modules>
   </component>
